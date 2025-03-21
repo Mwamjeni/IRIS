@@ -18,7 +18,7 @@ db = SQLAlchemy(app)
 
 # Define Models
 class HealthInfo(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+    question_id = db.Column(db.Integer, primary_key=True)
     question = db.Column(db.String(500), nullable=False)
     answer = db.Column(db.Text, nullable=False)
 
