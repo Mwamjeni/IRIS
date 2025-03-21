@@ -21,7 +21,7 @@ metadata = MetaData()
 # Table Structure
 health_info = Table(
     table_name, metadata,
-    Column('id', Integer, primary_key=True, autoincrement=True),
+    Column('question_id', Integer, primary_key=True, autoincrement=True),
     Column('question', String(500), nullable=False),
     Column('answer', Text, nullable=False),
 )
